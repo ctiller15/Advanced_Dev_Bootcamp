@@ -1,0 +1,40 @@
+body{
+	--shadow-color: #efa414;
+	--background: #fcd04b;
+	background-color: #fcd04b;
+	font-family: Lato;
+	color: white;
+}
+
+h1{
+	text-align: center;
+	font-weight: 300;
+}
+
+.btn{
+	outline: none;
+	border: none;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	background-color: #FCAD26;
+	font-size: 16px;
+	font-weight: 300px;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 25px 80px;
+	margin: 0 auto;
+	border-radius: 20px;
+	box-shadow: 0 6px var(--shadow-color);
+}
+
+.btn:hover{
+	box-shadow: 0 4px var(--shadow-color);
+	top: 2px;
+}
+
+.btn:active{
+	box-shadow: none;
+	top: 6px;
+}

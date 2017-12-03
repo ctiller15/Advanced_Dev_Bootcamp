@@ -1,0 +1,62 @@
+html{
+	height: 100%;
+}
+
+body{
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	margin: 0;
+}
+
+.header, .footer{
+	background: green;
+	flex-basis: 100px;
+	flex-grow: 1;
+}
+
+.middle{
+	flex-basis: 800px;
+	flex-grow: 4;
+	flex-wrap: wrap;
+	display: flex;
+}
+
+.content{
+	flex-basis: 100px;
+	flex-grow: 1;
+}
+
+.side{
+	background: gray;
+}
+
+.main{
+	background: white;
+	flex-grow: 10;
+}
+
+.aside{
+	background: blue;
+}
+
+@media screen and (max-width: 640px){
+	.middle{
+		flex-direction: column;
+	}
+	.main{
+		order: 0;
+		flex-basis: 80%;
+		/*flex-shrink: 1;*/
+	}
+	.side{
+		order: 1;
+		flex-basis: 10%;
+		/*flex-shrink: 5;*/
+	}
+	.aside{
+		order: 2;
+		flex-basis: 10%;
+		/*flex-shrink: 5;*/
+	}
+}

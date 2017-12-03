@@ -1,0 +1,84 @@
+html{
+	height: 100%;
+}
+
+body{
+	height: 100%;
+	margin: 0;
+}
+@keyframes skyshift{
+	0%{
+		background: #0A0F2E;
+	}
+	10%{
+		background: #E490C2;
+	}
+	30%{
+		background: #38C4FF;
+	}
+	50%{
+		background: #47E7FF;
+	}
+	70%{
+		background: #38C4FF;
+	}
+	90%{
+		background: #E490C2;
+	}
+	100%{
+		background: #0A0F2E;
+	}
+}
+
+@keyframes sunriseset{
+	0%{
+		transform: translate(200px, 200%);
+		background: #E43210;
+	}
+	25%{
+		transform: translate(450px, 70%);
+	}
+	50%{
+		transform: translate(700px, 40%);
+		background: #FFE82E;
+	}
+	75%{
+		transform: translate(950px, 70%);
+	}
+	100%{
+		transform: translate(1200px, 200%);
+		background: #E43210;
+	}
+
+}
+
+.sky{
+	height: 100%;
+	width: 100%;
+	animation-name: skyshift;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.sun{
+	position: relative;
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	background: yellow;
+	animation-name: sunriseset;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	z-index: 0;
+}
+
+.field{
+	background: rgb(100,200,100);
+	position: fixed;
+	bottom: 0;
+	height: 70%;
+	width: 100%;
+	z-index: 1;
+}

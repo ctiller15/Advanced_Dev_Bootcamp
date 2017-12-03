@@ -1,0 +1,108 @@
+body{
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+section{
+	display: flex;
+}
+
+header{
+	width: 100%;
+}
+
+h2{
+	text-align: center;
+}
+
+.head{
+	flex-basis: 100%;
+}
+
+.head nav ul{
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	justify-content: space-around;
+}
+
+.hero{
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+h1{
+	font-size: 3em;
+	text-align: center;
+}
+
+.hero p{
+	font-size: 2em;
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.hero a{
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.our-work{
+	display: flex;
+	flex-direction: column;
+}
+
+.our-work header{
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	justify-content: space-around;
+}
+
+.our-work h2{
+	font-size: 2em;
+	text-align: center;
+}
+
+.our-work p{
+	font-size: 1em;
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+	line-height: 2em;
+}
+
+.images{
+	display: flex;
+	flex-direction: column;
+}
+
+.our-work img{
+	display: block;
+	margin: 3% auto;
+	width: 80%;
+	height: auto;
+}
+
+.features header{
+	display: flex;
+	flex-direction: column;
+}
+
+.features h2{
+	text-align: center;
+	font-size: 2em;
+	width: 70%;
+	margin: 0 auto;
+}
+
+.features p{
+	text-align: center;
+	font-size: 1em;
+	line-height: 2em;
+	width: 50%;
+	margin: 0 auto;
+}
